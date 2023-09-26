@@ -26,14 +26,14 @@
        </ul>
    </nav>
   </header>
-  <main>
+  <main class ="mx-auto" style="width: 800px;">
   <h1>Sistema de Pedidos</h1>
-  <form action="salvar_pedido.php" method="post">
-   <p> <label for="data">Data: </label><input type="datetime-local" name="data" id="data"></p>
-    <p><label for="cliente">Cliente: </label><input type="text" name="cliente" id="cliente"></p>
-    <p><label for="produto">Produto: </label><input type="text" name="produto" id="produto"></p>
-    <p><label for="valor">Valor: </label><input type="number" name="valor" id="valor"></p>
-    <p><input type="submit" value="Enviar"></p>
+  <form action="salvar_pedido.php" method="POST">
+   <p> <label for="data">Data: </label><input type="datetime-local" name="data" id="data" class="m-2"></p>
+    <p><label for="cliente">Cliente: </label><input type="text" name="cliente" id="cliente" class="m-2"></p>
+    <p><label for="produto">Produto: </label><input type="text" name="produto" id="produto" class="m-2"></p>
+    <p><label for="valor">Valor: </label><input type="number" name="valor" id="valor" class="m-2"></p>
+    <p><input class="btn btn-dark" type="submit" value="Enviar"></p>
   </form>
   <hr>
   <h2>Meus pedidos</h2>
@@ -73,8 +73,8 @@ echo "<td>" . $row['cliente'] . "</td>";
 echo "<td>" . $row['produto'] . "</td>";
 echo "<td>" . $row['valor'] . "</td>";
 echo "<td>";
-echo "<a href='editar_pedido.php?id=" . $row['id'] . "'>Editar</a> ";
-echo "<a href='excluir_pedido.php?id=" . $row['id'] . "'>Excluir</a>";
+echo "<a class='btn btn-warning' href='editar_pedido.php?id=" . $row['id'] . "'>Editar</a> ";
+echo "<a class='btn btn-danger' href='excluir_pedido.php?id=" . $row['id'] . "'>Excluir</a>";
 echo "</td>";
 echo "</tr>";
 }
@@ -83,7 +83,7 @@ echo "</tr>";
   </table>
   </main>
   <footer>
-    <!-- place footer here -->
+    <?php include 'footer.php'; ?>
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
