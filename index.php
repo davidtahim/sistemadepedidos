@@ -26,18 +26,18 @@
        </ul>
    </nav>
   </header>
-  <main class ="mx-auto" style="width: 800px;">
+  <main class ="mx-5">
   <h1>Sistema de Pedidos</h1>
-  <form action="salvar_pedido.php" method="POST">
-   <p> <label for="data">Data: </label><input type="datetime-local" name="data" id="data" class="m-2"></p>
-    <p><label for="cliente">Cliente: </label><input type="text" name="cliente" id="cliente" class="m-2"></p>
-    <p><label for="produto">Produto: </label><input type="text" name="produto" id="produto" class="m-2"></p>
-    <p><label for="valor">Valor: </label><input type="number" name="valor" id="valor" class="m-2"></p>
+  <form action="salvar_pedido.php" method="post" class="row">
+  <div class= "col-md-3"><label for="data">Data: </label><input type="date" name="data" id="data" class="m-2"></div>
+   <div class= "col-md-3"> <label for="cliente">Cliente: </label><input type="text" name="cliente" id="cliente" class="m-2"></div>
+    <div class="col-md-3"><label for="produto">Produto: </label><input type="text" name="produto" id="produto" class="m-2"></div>
+    <div class="col-md-3"><label for="valor">Valor: </label><input type="number" name="valor" id="valor" class="m-2"></div>
     <p><input class="btn btn-dark" type="submit" value="Enviar"></p>
   </form>
   <hr>
   <h2>Meus pedidos</h2>
-  <table>
+  <table class="table table-dark table-borderless">
     <thead>
       <tr>
         <th>Data</th>
