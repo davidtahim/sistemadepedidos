@@ -26,7 +26,7 @@
        </ul>
    </nav>
   </header>
-  <main class ="mx-5">
+  <main class ="mx-4">
   <h1>Sistema de Pedidos</h1>
   <form action="salvar_pedido.php" method="post" class="row">
   <div class= "col-md-3"><label for="data">Data: </label><input type="date" name="data" id="data" class="m-2"></div>
