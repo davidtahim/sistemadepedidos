@@ -82,7 +82,7 @@ echo "</tr>";
     </tbody>
   </table>
   </main>
-  <footer>
+  <footer class="fixed-bottom">
     <?php include 'footer.php'; ?>
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
